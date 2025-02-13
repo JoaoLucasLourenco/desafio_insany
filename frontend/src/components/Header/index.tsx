@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "./style";
-import NavItem, { NavItemInterface } from "../Navitem";
+import { NavItemInterface } from "../Navitem";
+import NavItems from "../NavItems";
 import { useState } from "react";
 
 function Navbar() {
@@ -58,19 +59,8 @@ function Navbar() {
           ></Image>
         </button>
 
-        <ul className="desktop">
-          {items.map((item, index) => (
-            <NavItem key={index} url={item.url} label={item.label} />
-          ))}
-          <button>Cadastre-se</button>
-        </ul>
-
-        <ul className={`${openMenu ? "mobile" : ""}`}>
-          {items.map((item, index) => (
-            <NavItem key={index} url={item.url} label={item.label} />
-          ))}
-          <button>Cadastre-se</button>
-        </ul>
+        <NavItems arrItems={items} classe={"desktop"} />
+        <NavItems arrItems={items} classe={`${openMenu ? "mobile" : ""}`} />
       </Header>
     </>
   );
