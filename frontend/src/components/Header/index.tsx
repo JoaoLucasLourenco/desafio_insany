@@ -7,7 +7,7 @@ import { NavItemInterface } from "../Navitem";
 import NavItems from "../NavItems";
 import { useState } from "react";
 
-function Navbar() {
+const Navbar = () => {
   const items: NavItemInterface[] = [
     {
       url: "#",
@@ -64,6 +64,6 @@ function Navbar() {
       </Header>
     </>
   );
-}
+};
 
 export default Navbar;

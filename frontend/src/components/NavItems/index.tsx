@@ -1,6 +1,6 @@
 import NavItem, { NavItemInterface } from "../Navitem";
 
-function NavItems(props: { arrItems: NavItemInterface[]; classe: string }) {
+const NavItems = (props: { arrItems: NavItemInterface[]; classe: string }) => {
   return (
     <ul className={props.classe}>
       {props.arrItems.map((item, index) => (
@@ -9,6 +9,6 @@ function NavItems(props: { arrItems: NavItemInterface[]; classe: string }) {
       <button>Cadastre-se</button>
     </ul>
   );
-}
+};
 
 export default NavItems;
