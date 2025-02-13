@@ -185,8 +185,10 @@ const HeroForm = () => {
           </Link>
         </p>
       </span>
-      <img
+      <Image
         className="divider"
+        width={100}
+        height={3}
         src={"formDivider.svg"}
         alt="Linha horizontal divisória"
       />
