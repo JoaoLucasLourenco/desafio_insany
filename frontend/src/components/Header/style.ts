@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Header = styled.header`
   background-color: #070514;
-  padding: 2rem 0;
+  padding: 2rem 4rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   ul {
     display: none;
