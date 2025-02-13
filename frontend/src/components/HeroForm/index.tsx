@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { FormWrapper } from "./style";
 import Link from "next/link";

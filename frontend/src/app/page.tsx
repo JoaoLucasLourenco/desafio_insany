@@ -1,7 +1,15 @@
+"Use client";
+
+import About from "@/components/About";
 import Hero from "../components/HeroSection";
 
 function Home() {
-  return <Hero></Hero>;
+  return (
+    <main>
+      <Hero />
+      <About />
+    </main>
+  );
 }
 
 export default Home;
