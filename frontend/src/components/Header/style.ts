@@ -49,6 +49,7 @@ export const Header = styled.header`
     width: 100%;
     padding: 1em;
     gap: 6px;
+    text-align: center;
     button {
       padding: 0.5em 0;
       margin: 10px 0;
