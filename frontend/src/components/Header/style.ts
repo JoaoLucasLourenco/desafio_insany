@@ -69,5 +69,6 @@ export const Header = styled.header`
     .desktop {
       display: none;
     }
+    padding: 2rem 1rem;
   }
 `;
