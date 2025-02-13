@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "./style";
-import NavItem, { NavItemInterface } from "../Navitem";
+import { NavItemInterface } from "../Navitem";
 import NavItems from "../NavItems";
 import { useState } from "react";
 
