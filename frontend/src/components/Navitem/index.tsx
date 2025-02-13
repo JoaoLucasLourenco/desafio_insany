@@ -6,12 +6,12 @@ export interface NavItemInterface {
   label: string;
 }
 
-function NavItem(props: NavItemInterface) {
+const NavItem = (props: NavItemInterface) => {
   return (
     <Li>
       <Link href={props.url}>{props.label}</Link>
     </Li>
   );
-}
+};
 
 export default NavItem;
