@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Hero from "../components/HeroSection";
 import ListItems, { ListItemsInterface } from "../components/ListItems";
+import Carrousel from "../components/Carrousel";
 
 function Home() {
   const items: ListItemsInterface[] = [
@@ -14,6 +15,7 @@ function Home() {
       <Hero />
       <About />
       <ListItems items={items}></ListItems>
+      <Carrousel />
     </main>
   );
 }
