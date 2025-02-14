@@ -9,24 +9,27 @@ export interface ListItemsInterface {
 
 const ListItems = (props: { items: ListItemsInterface[] }) => {
   return (
-    <Section className="listItems">
-      {props.items.map((item, index) => (
-        <span key={index}>
-          <Image
-            className="divider"
-            width={64}
-            height={64}
-            src={item.imageUrl}
-            alt=""
-          />
-          <h1>{item.title}</h1>
-          <p>
-            Amet, leo turpis facilisi nam fusce nunc molestie. Orci, nibh auctor
-            lacus eleifend tincidunt sceleris
-          </p>
-        </span>
-      ))}
-    </Section>
+    <>
+      <Section className="listItems">
+        <div className="vazio"></div>
+        {props.items.map((item, index) => (
+          <span key={index}>
+            <Image
+              className="divider"
+              width={64}
+              height={64}
+              src={item.imageUrl}
+              alt=""
+            />
+            <h1>{item.title}</h1>
+            <p>
+              Amet, leo turpis facilisi nam fusce nunc molestie. Orci, nibh
+              auctor lacus eleifend tincidunt sceleris
+            </p>
+          </span>
+        ))}
+      </Section>
+    </>
   );
 };
 
