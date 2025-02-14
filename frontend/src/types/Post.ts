@@ -1,13 +1,10 @@
 export interface PostInterface {
-  id: number;
+  title: { rendered: string };
+  content: { rendered: string };
   date: string;
-  title: {
-    rendered: string;
-  };
-  excerpt: {
-    rendered: string;
-  };
-  featured_media: number;
+  excerpt: { rendered: string };
+  featured_media_url: string;
+  author_avatar_url: string;
+  author_name: string;
   link: string;
-  author: number;
 }
