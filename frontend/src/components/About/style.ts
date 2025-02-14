@@ -10,8 +10,8 @@ export const AboutWrapper = styled.main`
   z-index: 0;
   display: flex;
   @media (max-width: 1000px) {
-    flex-direction: column;
     padding: 11rem 1rem;
+    flex-direction: column;
   }
 
   .aboutTexts {
@@ -51,7 +51,7 @@ export const AboutWrapper = styled.main`
       color: #ffffff;
       border-radius: 6px;
       font-size: 1em;
-      width: 30%;
+      width: 40%;
       &:hover {
         opacity: 0.8;
       }
@@ -64,9 +64,13 @@ export const AboutWrapper = styled.main`
       gap: 1em;
       align-items: center;
       padding: 2em 0;
+      width: 100%;
       p {
         color: #1e1c2d;
         font-size: 0.9rem;
+      }
+      @media (max-width: 1000px) {
+        justify-content: center;
       }
     }
   }
@@ -75,6 +79,7 @@ export const AboutWrapper = styled.main`
     padding: 0 2rem;
     @media (max-width: 1000px) {
       width: 100%;
+      padding: 0 1rem;
     }
     .image {
       float: right;
@@ -113,9 +118,13 @@ export const AboutWrapper = styled.main`
         }
       }
       @media (max-width: 1000px) {
-        width: 80%;
-        bottom: 8rem;
+        bottom: 18rem;
         padding: 0.8rem;
+        width: 50%;
+      }
+      @media (max-width: 700px) {
+        width: 80%;
+        bottom: 5rem;
       }
       .divider {
         width: 100%;
