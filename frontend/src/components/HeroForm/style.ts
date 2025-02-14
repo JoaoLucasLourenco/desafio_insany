@@ -8,6 +8,7 @@ export const FormWrapper = styled.div`
   max-width: 40%;
   max-height: 130%;
   box-shadow: 0px 30px 50px -10px rgba(76, 74, 94, 0.2);
+  z-index: 1;
   @media (max-width: 1000px) {
     max-width: 100%;
   }
@@ -29,6 +30,16 @@ export const FormWrapper = styled.div`
   .isEmpresa {
     display: flex;
     gap: 2em;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      label {
+        display: flex;
+        align-items: center;
+        input {
+          margin: 0;
+        }
+      }
+    }
     label {
       padding: 1em 1em 1em 0;
       display: flex;
@@ -50,14 +61,14 @@ export const FormWrapper = styled.div`
   }
 
   .isEmpresa input[type="radio"]:checked {
-    background-color: white; /* Mantém o fundo branco */
+    background-color: white;
   }
 
   .isEmpresa input[type="radio"]:checked::before {
     content: "";
     width: 10px;
     height: 10px;
-    background-color: #1d63ff; /* Bolinha azul no meio */
+    background-color: #1d63ff;
     border-radius: 50%;
     position: absolute;
     top: 50%;

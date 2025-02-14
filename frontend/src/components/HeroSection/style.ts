@@ -12,5 +12,6 @@ export const Section = styled.section`
   gap: 4rem;
   @media (max-width: 1000px) {
     flex-direction: column;
+    padding: 3rem 1rem;
   }
 `;
