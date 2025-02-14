@@ -54,7 +54,33 @@ const About = () => {
           <p>Fale conosco</p>
         </span>
       </section>
-      <section className="aboutImage"></section>
+      <section className="aboutImage">
+        <img className="image" src="about.png" />
+        <div>
+          <span className="texts">
+            <span>
+              <h1>R$ 999,90</h1>
+              <p>Balançaço</p>
+            </span>
+            <Image
+              className="barChart"
+              src={"barChart.svg"}
+              height={28}
+              width={20}
+              alt=""
+            />
+          </span>
+          <Image
+            className="divider"
+            width={100}
+            height={3}
+            src={"formDivider.svg"}
+            alt="Linha horizontal divisória"
+          />
+          <img className="avatares" src="avatares.png" />
+        </div>
+      </section>
+      <section className="aboutChar"></section>
     </AboutWrapper>
   );
 };
