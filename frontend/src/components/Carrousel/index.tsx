@@ -1,7 +1,6 @@
 "use client";
 import { Section } from "./style";
 import { useEffect, useState } from "react";
-import { PostInterface } from "../../types/Post";
 const Carrousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 

@@ -1,6 +1,3 @@
-async function PostsById({ params }: { params: Promise<{ id: string }> }) {
-  const id = (await params).id;
-  return <div>O id do post é: {id}</div>;
+export default function PostPage() {
+  return <>Post por id</>;
 }
-
-export default PostsById;

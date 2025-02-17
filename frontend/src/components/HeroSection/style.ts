@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  max-height: 80%;
   background-image: url("maskGroup.png");
   background-repeat: no-repeat;
   background-size: cover;
