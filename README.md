@@ -1,6 +1,6 @@
 # 🎯 Desafio Insany - Next.js + TypeScript + Styled Components
 
-Este repositório contém a solução para o desafio Insany, desenvolvido com Next.js e TypeScript, integrando Sanity CMS para a gestão de conteúdo, Styled Components para estilização e Context API ou Jotai para gerenciamento de estado.
+Este repositório contém a solução para o desafio Insany, desenvolvido com Next.js e TypeScript e Styled Components para estilização.
 
 ## ⚙️ Tecnologias Usadas
 
