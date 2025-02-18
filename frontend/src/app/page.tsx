@@ -10,7 +10,14 @@ function Home() {
     { title: "Tudo digital ", imageUrl: "listIcon3.svg" },
     { title: "Evolução constante", imageUrl: "listIcon4.svg" },
   ];
-  return <main></main>;
+  return (
+    <main>
+      <Hero />
+      <About />
+      <ListItems items={items} />
+      <Carrousel />
+    </main>
+  );
 }
 
 export default Home;

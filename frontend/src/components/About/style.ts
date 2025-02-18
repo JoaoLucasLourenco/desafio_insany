@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutWrapper = styled.main`
+export const AboutWrapper = styled.div`
   background-color: #ffffff;
   height: 100vh;
   padding: 11rem 4rem;
